@@ -1,0 +1,15 @@
+{
+  "name": "skiboats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@pjirsa",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.2",
+    "tabletojson": "^0.4.0"
+  }
+}
