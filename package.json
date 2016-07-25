@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "fs": "0.0.2",
-    "tabletojson": "^0.4.0"
+    "tabletojson": "^0.4.0",
+    "underscore": "^1.8.3"
   }
 }
