@@ -5,10 +5,10 @@ var _ = require('underscore');
 var json2csv = require('json2csv');
 var cheerio = require('cheerio');
 
-var url = 'http://www.ski-it-again.com/php/skiitagain.php?endless=summer&topic=Search&category=Comp_Boat'
+var url = 'http://www.ski-it-again.com/php/skiitagain.php?endless=summer&topic=Search&category=Comp_Boat';
 
 var htmlResult = '';
-var req = http.get(url, (res) => {
+http.get(url, (res) => {
     res.setEncoding('utf8');
 
     res.on('data', (chunk) => {
@@ -42,5 +42,5 @@ var req = http.get(url, (res) => {
         var csvResult = json2csv({ data: results, fields: fields });
 
         fs.writeFile("./boats.csv", csvResult, 'utf8');
-    })
+    });
 });
