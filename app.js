@@ -38,7 +38,7 @@ http.get(url, (res) => {
 
         fs.writeFile("./boats.json", JSON.stringify(results), 'utf8');
 
-        var fields = ['POST ID', 'State', 'Make and Model', 'Post Date', 'Asking $'];
+        var fields = ['POST ID', 'State', 'Year, Make and Model', 'Post Date', 'Asking $'];
         var csvResult = json2csv({ data: results, fields: fields });
 
         fs.writeFile("./boats.csv", csvResult, 'utf8');
